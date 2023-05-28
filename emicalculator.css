@@ -1,0 +1,459 @@
+body{
+  background-color: white;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppin', sans-serif;
+  
+  
+}
+/*h1
+{
+  position: absolute;
+  top: 20px;
+  left:400px;
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  font-family: poppins;
+  font-weight: 400;
+  color: #14213d;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  
+}*/
+.container{
+  height: 60%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  
+  justify-content: center;
+  position: relative;
+  top:100px;
+  
+}
+.menu{
+ background: white;
+  display: flex;
+  box-shadow: 0 10px 10px 0px rgba(0,0,0,0.1);
+  overflow: hidden;
+  
+}
+.menu div{
+  padding: 20px 50px;
+  font-size: 20px;
+  cursor:pointer;
+  
+  position: relative;
+  transition: transform 0.5s;
+}
+.menu div span{
+  position: absolute;
+  color: #ff5361;
+  width: 100%;
+  height: 100%;
+  padding: 20px 50px;
+  left: 0;
+  top: 100%;
+  border-bottom: 5px solid #ff5361;
+  
+}
+.menu div:hover{
+  transform: translateY(-100%);
+}
+a{
+color: black;
+text-decoration: none;
+}
+i{
+  color: black;
+}
+.home
+{
+  font-family: "Roboto", sans-serif;
+  width: 1000px;
+  margin:24px;
+  position: absolute;
+  top: 100px;
+  background-color: #fff;
+  box-shadow: 0 12px 50px -11px rgb(0,0,0,0.2);
+  border-radius: 8px;
+  color: #14213d;
+}
+.home .top {
+  background: #ff5361;
+  color: #fff;
+  padding: 32px;
+}
+.home .top h2{
+  margin-top: 0;
+}
+.home form {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+.home .title
+{
+  margin-bottom: 16px;
+}
+.home form input {
+  font-size: 20px;
+  padding: 8px 24px;
+  width: 100%;
+}
+
+.home .result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .result .left {
+  width: 100%;
+  padding: 8px 32px;
+}
+
+.home .left h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.home .result .value {
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(20, 33, 61, 0.2);
+}
+
+.home .result .value::before {
+  content: "Rs";
+  font-size: 24px;
+  font-weight: 400;
+  margin-right: 6px;
+  opacity: 0.4;
+}
+
+.home .calculate-btn {
+  background: #ff5361;
+  color: #fff;
+  border: none;
+  padding: 8px 32px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  margin: 24px 0;
+}
+
+.home .right {
+  width: 50%;
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .home form {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .home .result {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+h3{
+  position: absolute;
+  top: 810px;
+  left:350px;
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  font-family: poppins;
+  font-weight: 400;
+  color: #14213d;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+h5{
+  position: absolute;
+  top: 880px;
+  left:500px;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-family: poppins;
+  font-weight: 400;
+  color: #14213d;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.Payable
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 800px;
+  left: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+
+}
+.box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.box::before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(0deg,transparent,transparent,#14213d,#14213d,#14213d);
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+.box::after{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(0deg,transparent,transparent,#14213d,#14213d,#14213d);
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+.boader-line
+{
+  position: absolute;
+  top: 0;
+  inset: 0;
+}
+.boader-line::before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(0deg,transparent,transparent,#ff5361,#ff5361,#ff5361);
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite; 
+  animation-delay: -1.5s;
+}
+.boader-line::after{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(0deg,transparent,transparent,#ff5361,#ff5361,#ff5361);
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite; 
+  animation-delay: -4.5s;
+}
+@keyframes animate
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.Payable form
+{
+  position: absolute;
+  inset: 4px;
+  background: white;
+  padding: 50px 40px;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.Amount{
+  position: relative;
+  margin: 20px 0;
+}
+.Amount input{
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #7f8fa6;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.6s;
+}
+
+.Amount span{
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  font-size: 1rem;
+  color: #7f8fa6;
+  text-transform: uppercase;
+  pointer-events: none;
+  transition: 0.6s;
+}
+.Amount input:valid ~ span,
+.Amount input:focus ~ span{
+  color: #ff5361;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0 10px;
+  background: #fff;
+  letter-spacing: 0.1rem;
+}
+
+.Amount input:valid,
+.Amount input:focus{
+  color: #ff5361;
+  border: 2px solid #ff5361;
+
+}
+
+.onclick button
+{
+  position: absolute;
+  top:1300px;
+  left:500px;
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  font-size: 20px;
+  color: #14213d;
+  font-family: poppins;
+  font-weight: 400;
+  border: 5px solid #14213d;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 1.5s;
+}
+.onclick button:hover
+{
+  box-shadow: 0 5px 50px 0 #14213d inset, 0 5px 50px 0 #14213d,
+              0 5px 50px 0 #14213d inset, 0 5px 50px 0 #14213d;
+  text-shadow: 0 0 5px #14213d, 0 0 5px #14213d;
+}
+.name
+{
+  position: absolute;
+  top:1400px;
+  padding:15px;
+  font-size: 20px;
+  font-family: poppins;
+  font-weight: 300;
+  color: #14213d;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.name1
+{
+  position: absolute;
+  top:1500px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: poppins;
+  font-weight: 400;
+  color: #14213d;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border-radius: 1px solid #14213d;
+}
+table th{
+  display: table-cell;
+  text-align: center;
+  background: #ff5361;
+  font-weight: 600;
+  
+}
+table, th, td { border: 1px solid #14213d;}
+
+.pable{
+  position: absolute;
+  top:20px;
+  left: 400px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading
+{
+  position: relative;
+  width: 400px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.heading::before{
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 140%;
+  background: linear-gradient(#14213d,#ff5361);
+  animation: animate 4s linear infinite;
+}
+.heading::after
+{
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: #fff;
+}
+@keyframes animate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.heading h1{
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  font-family: poppins;
+  font-weight: 400;
+  color: #14213d;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  z-index : 10;
+}

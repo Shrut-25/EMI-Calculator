@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="business.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <div class="pable">
+    <div class="heading">
+    <h1>EMI Calculator</h1>
+    </div>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <div>
+                <i class="fa-solid fa-house-chimney"></i>
+                <a href="home.html">Home Loan</a>
+                <span>
+                    <i class="fa-solid fa-house-chimney"></i>
+                <a href="home.html">Home Loan</a>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-briefcase"></i>
+                <a href="business.html">Business Loan</a>
+                <span>
+                    <i class="fa-solid fa-briefcase"></i>
+                    <a href="business.html">Business Loan</a>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-person"></i>
+                <a href="personal.html">Personal Loan</a>
+                <span>
+                    <i class="fa-solid fa-person"></i>
+                <a href="personal.html">Personal Loan</a>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-school"></i>
+                <a href="education.html">Education Loan</a>
+                <span>
+                    <i class="fa-solid fa-school"></i>
+                    <a href="education.html">Education Loan</a>
+                </span>
+            </div>
+        </div>
+    <div class="home">
+        <div class="top">
+            <h2> Business Loan Calculator</h2>
+            <form action="#">
+                <div class="group">
+                    <div class="title">Amount</div>
+                    <input type="text" value="100000" class="Loan-Amount">
+
+
+                </div>
+                <div class="group">
+                    <div class="title">Interest Rate</div>
+                    <input type="text" value="7.5" class="Interest-amount">
+
+
+                </div>
+                <div class="group">
+                    <div class="title">Year</div>
+                    <input type="text" value="20" class="year">
+
+
+                </div>
+
+            </form>
+        </div>
+        <div class="result">
+            <div class="left">
+                <div class="loan-emi">
+                    <h4>Loan EMI</h4>
+                    <div class="value">123</div>
+                </div>
+                <div class="total-interest">
+                    <h4>Total Interest Payable</h4>
+                    <div class="value">1234</div>
+                </div>
+                <div class="total-amount">
+                    <h4>Total Amount</h4>
+                    <div class="value">12345</div>
+                </div>
+                <button class="calculate-btn">Calculate</button>
+            </div>
+            <div class="right">
+              <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+           
+        </div>
+    </div>
+   <h3>Amortization Table</h3>
+   <h5>Your Details</h5>
+    <div class="Payable">
+        <div class="box">
+            <span class="boader-line"></span>
+<form>
+    <div class="Amount">
+<input type="text" id="loanlabel" required="required">
+<span>Loan Amount</span>
+    <br>
+</div>
+<div class="Amount">
+<input type="text" id="ratelabel" required="required">
+<span>Interest Amount</span>
+    <br>
+
+</div>
+<div class="Amount">
+<input type="text" id="termlabel" required="required">
+<span>Year</span>
+    <br>
+    <br>
+</div>
+
+</form>
+        </div>
+</div>
+
+
+    <div class="onclick">
+<button onclick="CalcLoan()">Calculate </button>
+<br>
+<hr>
+</div>
+<div class="name">
+<label id="MonthlyPayment">The Monthly Payment .</label>
+<br> 
+ <hr>
+</div>
+<div class="name1">
+    <label id="ATable">Amortization Table </label>
+   </div> 
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+    <script src="business.js"></script>
+</body>
+</html>
